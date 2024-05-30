@@ -1,17 +1,14 @@
 function shop(items) {
     console.log("Welcome to our shop!");
-    // Add your shop functionality here
-    // For example:
+   
     let newItems = ["Soap", "Floss", "Toothpaste", "Toothbrush", "Mouthwash"];
     for (let i = 0; i < newItems.length; i++) {
         add_item(items, newItems[i]);
     }
     console.log("Items in the shop now:", items);
 
-    // Buying items
-    bought_item(items, "Floss"); // Legitimate item
-    bought_item(items, "Towels"); // Non-existent item
-
+    bought_item(items, "Floss"); 
+    bought_item(items, "Towels"); 
     console.log("Thank you for shopping!");
 }
 
@@ -29,6 +26,5 @@ function bought_item(items, item) {
     }
 }
 
-// Example usage:
-let items = ["Peroxide", "Tissue", "Papertowl"];
+let items = ["Peroxide", "Tissue", "Papertowel"];
 shop(items);
